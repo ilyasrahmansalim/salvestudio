@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SALVE STUDIO | Creating Every Moment</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='black'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='70' fill='white'%3E✦%3C/text%3E%3C/svg%3E">
+
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+    @keyframes luxuryShine {
+  from {
+    transform: rotate(30deg) translateX(-120%) translateY(-50%);
+  }
+  to {
+    transform: rotate(30deg) translateX(120%) translateY(-50%);
+  }
+}
+
+#burger.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+#burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+</style>
+
+<div class="transition-all duration-300 w-full ">
+    <!-- Navbar -->
+<header class="fixed top-0 left-0 w-full bg-black text-white shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#intro" class="text-xl font-bold">SALVE STUDIO ✦</a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-6">
+                <a href="index.html" class="relative after:block after:h-[2px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+                    Home</a>
+                <a href="price-list.html" class="relative after:block after:h-[2px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+                    Price List</a>
+                <a href="portofolio.html" class="relative after:block after:h-[2px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+                    Portofolio</a>
+                <a href="#" class="underline underline-offset-4 decoration-2">
+                    Contact</a>
+            </nav>
+
+            <!-- Burger -->
+            <button id="burger"
+            class="md:hidden p-2 w-8 h-8 flex flex-col justify-center items-center relative">
+
+                <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-8 h-0.5 bg-white transition-all duration-300 my-1"></span>
+                <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
+
+            </button>
+        </div>
+    </div>
+</header>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"class="fixed inset-0 bg-black text-white flex flex-col items-center justify-center gap-10 opacity-0 pointer-events-none transition-all duration-300 z-40">
+            <a href="#" class="text-3xl font-semibold">
+                Home</a>
+            <a href="#" class="text-3xl font-semibold">
+                Price List</a>
+            <a href="#" class="text-3xl font-semibold">
+                Portofolio</a>
+            <a href="#" class="text-3xl font-semibold">
+                Contact</a>
+
+</div>
+
+    <!--Awal-->
+    <section id="intro" class="bg-black py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-8xl font-bold mb-4 mt-12 text-white ">
+                Contact Us</h1>
+
+            <p class="text-xl md:text-2xl text-gray-400 relative after:absolute after:left-0 after:-bottom-5 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-gray-500 after:to-transparent">
+                Hubungi Kami</p>        
+    </section>
+    
+    <!--Contact Info-->
+    <section class="py-20 px-4 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-4xl md:text-8xl font-bold mb-6 text-white text-center">💬</div>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+                Let's Create Great Moment Together!</h2>
+            <p class="text-2xl md:text-md mb-12 text-center text-gray-200">
+                Mari Ciptakan Momen Hebat Bersama!</p>
+            <p class="text-md md:text-md mb-8 text-center text-gray-500">
+                Contact us via WhatsApp for instant response and booking<br>Hubungi kami via WhatsApp untuk respons cepat dan pemesanan</p>
+            <div class="flex items-center justify-center gap-4 mb-8">
+            <a href="https://wa.me/82229970129" class="relative z-10 inline-block px-12 py-3 border border-white text-white overflow-hidden before:absolute before:inset-0 before:bg-white before:z-[-1] before:translate-x-[-100%] before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-black">
+                📱 WhatsApp Us / Hubungi Via WhatsApp
+            </a>
+            </div>
+        </div>
+    </section>
+    <!--Contact-->
+    <section id="contact" class="py-20 px-6 lg:px-12 bg-black">
+        <div class="max-w-6xl mx-auto">
+             
+            <a href="https://wa.me/82229970129" class="block" target="_blank">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                    <span class="text-8xl text-white mb-4 mt-12 text-center">📱</span>
+                     <h3 class="text-3xl font-bold mb-4 text-white text-center">
+                        WhatsApp</h3> 
+                    </p>
+                    <div class="mb-4">
+                        <div class="items-baseline text-center"><span class="text-5xl md:text-2xl font-bold text-white">
+                            +62 822-2997-0129</span></div>   
+                    </div>
+                    <div class="mb-4">
+                        
+                    </div>
+                    <div class="flex-grow">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="text-gray-300 text-center">
+                                    For quick Response / Untuk respon Cepat</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div></a>
+
+                <a class="block" href="mailto:salvestudiobox@gmail.com" target="_blank">
+                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                    <span class="text-8xl text-white mb-4 mt-12 text-center">✉️</span>
+                     <h3 class="text-3xl font-bold mb-4 text-white text-center">
+                        Email</h3> 
+                    </p>
+                    <div class="mb-4">
+                        <div class="items-baseline text-center"><span class="text-5xl md:text-2xl font-bold text-white">
+                            salvestudiobox@gmail.com</span></div>   
+                    </div>
+                    
+                    <div class="mb-4">
+
+                        
+                    </div>
+                    <div class="flex-grow">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="text-gray-300 text-center">
+                                    For detailing inquiries / Untuk pertanyaan detail</span>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div></a>
+
+                <a href="https://www.instagram.com/salvestudiobox" class="block" target="_blank">
+                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                    <span class="text-8xl text-white mb-4 mt-12 text-center ">📷</span>
+                    
+                     <h3 class="text-3xl font-bold mb-4 text-white text-center">
+                        Instagram</h3> 
+                    </p>
+                    <div class="mb-4">
+                        <div class="items-baseline text-center"><span class="text-5xl md:text-2xl font-bold text-white">
+                            @salvestudiobox</span></div>   
+                    </div>
+                    
+                    <div class="mb-4">
+
+                        
+                    </div>
+                    <div class="flex-grow">
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <span class="text-gray-300 text-center">
+                                    See our latest work / Lihat karya terbaru kami</span>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20 px-4 bg-black">
+        <div class="max-w-4xl mx-auto">
+             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Business Hours / Jam Operasional</h2> 
+            <div class="space-y-4">
+
+                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-start gap-4">                        
+                        <div class="flex-1 text-center">
+                             <h3 class="text-xl font-bold mb-2 text-white">
+                                Monday - Friday / Senin - Jumat</h3> 
+                            <p class="text-white mt-3">
+                                09:00 - 18:00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-start gap-4">                      
+                        <div class="flex-1 text-center">
+                             <h3 class="text-xl font-bold mb-2 text-white">
+                                Saturday - Sunday / Sabtu - Minggu</h3> 
+                            <p class="text-white mt-3">
+                                09:00 - 17:00 WIB</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20 px-4 bg-black">
+        <div class="max-w-4xl mx-auto">
+             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2> 
+            <div class="space-y-4">
+
+                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
+
+                        </div>
+                        
+                        <div class="flex-1">
+                             <h3 class="text-xl font-bold mb-2 text-white">
+                                How do I book a session? / Bagaimana cara memesan sesi?</h3> 
+                            <p class="text-white mt-3">
+                                Contact us via WhatsApp with your preferred date, package, and location. We'll confirm availability and details.</p>
+                                <p class="text-gray-300 mt-3">
+                                Hubungi kami via WhatsApp dengan tanggal, paket, dan lokasi yang Anda inginkan. Kami akan mengkonfirmasi ketersediaan dan detailnya.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
+
+                        </div>
+                        
+                        <div class="flex-1">
+                             <h3 class="text-xl font-bold mb-2 text-white">
+                                When will I receive my photos? / Kapan saya akan menerima foto saya?</h3> 
+                            <p class="text-white mt-3">
+                                Photos are delivered via Google Drive within 7-14 working days after the session.</p>
+                                <p class="text-gray-300 mt-3">
+                                Foto dikirim via Google Drive dalam 7-14 hari kerja setelah sesi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
+
+                        </div>
+                        
+                        <div class="flex-1">
+                             <h3 class="text-xl font-bold mb-2 text-white">
+                                Can I request specific poses or styles? / Bisakah saya meminta pose atau gaya tertentu?</h3> 
+                            <p class="text-white mt-3">
+                                Absolutely! We encourage you to share your ideas and preferences before the session.</p>
+                                <p class="text-gray-300 mt-3">
+                                Tentu saja! Kami mengajak Anda untuk berbagi ide dan preferensi sebelum sesi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
+
+                        </div>
+                        
+                        <div class="flex-1">
+                             <h3 class="text-xl font-bold mb-2 text-white">
+                                Do you provide makeup or styling services? / Apakah Anda menyediakan layanan makeup atau styling?</h3> 
+                            <p class="text-white mt-3">
+                                We focus on photography, but we can recommend trusted partners for makeup and styling services.</p>
+                                <p class="text-gray-300 mt-3">
+                                Kami fokus pada fotografi, tetapi kami dapat merekomendasikan mitra tepercaya untuk layanan makeup dan styling.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+                    Still have questions? Don't hesitate to reach out!</h2> 
+                <p class="text-xl text-white max-w-2xl mx-auto">
+                    Masih ada pertanyaan? Jangan ragu untuk menghubungi kami!</p>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="p-8 bg-black rounded-2xl shadow-lg">
+                    <form class="space-y-4">
+                        <a href="#contact" class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg text-center relative inline-block hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            Contact Us / hubungi Kami</a>
+
+                    </form>
+                </div>  
+        </div>
+    </section>
+    
+    <footer class="bg-black text-white py-12 px-4 lg:px-8 xl:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-24">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                         <h3 class="text-2xl font-bold">Salve Studio ✦</h3>
+
+                    </div>
+                    <p class="text-white text-sm lg:text-base leading-relaxed">
+                        Creating every moment with passion and professionalism.<br>
+                        Menciptakan setiap momen dengan penuh semangat dan profesional.</p>
+                </div>
+                <div>
+                     <h4 class="font-semibold mb-4 text-base lg:text-lg">Contact / Kontak</h4> 
+                    <ul class="space-y-2 text-white">
+                        <li><a href="mailto:salvestudiobox@gmail.com" class="hover:text-white transition-colors text-sm lg:text-base" target="_blank">
+                            Email: salvestudiobox@gmail.com</a>
+
+                        </li>
+                        <li><a href="https://wa.me/6282229970129" class="hover:text-white transition-colors text-sm lg:text-base" target="_blank">
+                            Phone / Telepon: +62 822-2997-0129</a>
+
+                        </li>
+                        <li><a href="https://www.instagram.com/salvestudiobox" class="hover:text-white transition-colors text-sm lg:text-base" target="_blank">
+                            Instagram: @salvestudiobox</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 lg:mt-12 pt-8 text-center text-white">
+                <p class="text-sm lg:text-base">© 2026 Salve Studio. All rights reserved. / Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    
+</div>
+
+</body>
+
+<script>
+const burger = document.getElementById("burger");
+const menu = document.getElementById("mobileMenu");
+
+burger.addEventListener("click", () => {
+
+    burger.classList.toggle("active");
+
+    menu.classList.toggle("opacity-0");
+    menu.classList.toggle("pointer-events-none");
+
+});
+</script>
+
+
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SALVE STUDIO | Creating Every Moment</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='black'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='70' fill='white'%3E✦%3C/text%3E%3C/svg%3E">
+
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+
+#burger.active span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+#burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#burger.active span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+</style>
+
+<div class="transition-all duration-300 w-full ">
+    <!-- Navbar -->
+<header class="fixed top-0 left-0 w-full bg-black text-white shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#intro" class="text-xl font-bold">SALVE STUDIO ✦</a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-6">
+                <a href="#" class="relative after:block after:h-[2px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+                    Home</a>
+                <a href="#" class="underline underline-offset-4 decoration-2">
+                    Price List</a>
+                <a href="#" class="relative after:block after:h-[2px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+                    Portofolio</a>
+                <a href="#" class="relative after:block after:h-[2px] after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+                    Contact</a>
+            </nav>
+
+            <!-- Burger -->
+            <button id="burger"
+            class="md:hidden p-2 w-8 h-8 flex flex-col justify-center items-center relative">
+
+                <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
+                <span class="block w-8 h-0.5 bg-white transition-all duration-300 my-1"></span>
+                <span class="block w-8 h-0.5 bg-white transition-all duration-300"></span>
+
+            </button>
+        </div>
+    </div>
+</header>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu"class="fixed inset-0 bg-black text-white flex flex-col items-center justify-center gap-10 opacity-0 pointer-events-none transition-all duration-300 z-40">
+            <a href="index.html" class="text-3xl font-semibold">
+                Home</a>
+            <a href="price-list.html" class="text-3xl font-semibold">
+                Price List</a>
+            <a href="#" class="text-3xl font-semibold">
+                Portofolio</a>
+            <a href="contact.html" class="text-3xl font-semibold">
+                Contact</a>
+
+</div>
+
+    <!--Awal-->
+    <section id="intro" class="bg-black py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-2xl md:text-8xl font-bold mb-4 mt-12 text-white ">
+                Portofolio</h1>
+
+            <p class="text-xl md:text-2xl text-gray-400 relative after:absolute after:left-0 after:-bottom-5 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-gray-500 after:to-transparent">
+                Portofolio</p>        
+    </section>
+<!--Portofolio-->
+<section class="py-20 bg-black">
+    <div class="flex flex-wrap justify-center gap-4 mb-10 text-white px-4">
+<button onclick="filterSelection('all', this)" class="filter-btn active-btn bg-white text-black border border-white rounded-full px-4 py-1">
+        All / Semua
+    </button>
+    <button onclick="filterSelection('yearbook', this)" class="filter-btn inactive-btn border border-white rounded-full px-4 py-1">
+        Yearbook
+    </button>
+    <button onclick="filterSelection('group', this)" class="filter-btn inactive-btn border border-white rounded-full px-4 py-1">
+        Group / Grup
+    </button>
+    <button onclick="filterSelection('personal', this)" class="filter-btn inactive-btn border border-white rounded-full px-4 py-1">
+        Personal
+    </button>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 max-w-6xl mx-auto">
+    <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="group">
+        <img src="asset/img/page6_img3.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+
+    <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+        <img src="asset/img/page7_img4.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+
+    <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+        <img src="asset/img/page8_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+        <img src="asset/img/page3_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+
+    <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="group">
+        <img src="asset/img/page4_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+
+    <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="personal">
+        <img src="asset/img/page5_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+        <img src="asset/img/page10_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+
+    <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="group">
+        <img src="asset/img/page7_img4.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+    </div>
+</div>
+
+<!--Moodboards-->
+    <section id="intro" class="bg-black py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-2xl md:text-8xl font-semibold mb-4 mt-12 text-white ">
+                Moodboards</h1>
+
+            <p class="text-xl md:text-2xl text-gray-400 relative after:absolute after:left-0 after:-bottom-5 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-gray-500 after:to-transparent">
+                Visual inspiration for each package style / Inspirasi visual untuk setiap gaya paket</p>        
+    </section>
+<!--Moodboards GOLDEN-->
+    <section id="intro" class="bg-black py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-8xl md:text-6xl font-semibold mb-4 mt-12 text-white ">
+                GOLDEN-MOODBOARD</h1>
+
+            <p class="text-xl md:text-2xl text-gray-400">
+                Premium yearbook and group photography aesthetic</p> 
+            <p class="text-xl md:text-2xl text-gray-500">
+                Estetika fotografi yearbook dan grup premium</p>        
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+            <img src="asset/img/page7_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="group">
+            <img src="asset/img/page7_img2.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="personal">
+            <img src="asset/img/page7_img3.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+            <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+            <img src="asset/img/page7_img4.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+    </div>
+
+<!--Moodboards SIGNATURE-->
+    <section id="intro" class="bg-black py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-8xl md:text-6xl font-semibold mb-4 mt-12 text-white ">
+                SIGNATURE-MOODBOARD</h1>
+            <p class="text-xl md:text-2xl text-gray-400">
+                Classic and timeless group portrait style</p> 
+            <p class="text-xl md:text-2xl text-gray-500">
+                Gaya potret grup klasik dan abadi</p>        
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+            <img src="asset/img/page8_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="group">
+            <img src="asset/img/page8_img2.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="personal">
+            <img src="asset/img/page8_img3.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+            <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+            <img src="asset/img/page8_img4.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+    </div>
+
+<!--Moodboards EXCELLENT-->
+    <section id="intro" class="bg-black py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-8xl md:text-6xl font-semibold mb-4 mt-12 text-white ">
+                EXCELLENT-MOODBOARD</h1>
+            <p class="text-xl md:text-2xl text-gray-400">
+               Contemporary and lifestyle-oriented photography</p> 
+            <p class="text-xl md:text-2xl text-gray-500">
+               Fotografi kontemporer dan berorientasi gaya hidup</p>        
+    </section>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+            <img src="asset/img/page9_img1.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="group">
+            <img src="asset/img/page9_img2.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+
+        <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="personal">
+            <img src="asset/img/page9_img3.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+            <div class="portfolio-item overflow-hidden rounded-md transition-all duration-500" data-category="yearbook">
+            <img src="asset/img/page9_img4.jpeg" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+        </div>
+    </div>
+
+    <!--Contact Info-->
+    <section class="py-20 px-4 mt-40 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+                Like What You See? / Suka Dengan Apa Yang Anda Lihat?</h2>
+            <p class="text-md md:text-md mb-8 text-center text-gray-300">
+               Book your session now and let's create amazing memories together!<br>Pesan sesi Anda sekarang dan mari ciptakan kenangan luar biasa bersama!</p>
+            <div class="flex items-center justify-center gap-4 mb-8">
+            <a href="https://wa.me/82229970129" class="relative z-10 inline-block px-12 py-3 border border-white text-white overflow-hidden before:absolute before:inset-0 before:bg-white before:z-[-1] before:translate-x-[-100%] before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-black">
+                Book Now / Pesan Sekarang
+            </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-black text-white py-12 px-4 lg:px-8 xl:px-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-24">
+                <div class="sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-4">
+                         <h3 class="text-2xl font-bold">Salve Studio ✦</h3>
+
+                    </div>
+                    <p class="text-white text-sm lg:text-base leading-relaxed">
+                        Creating every moment with passion and professionalism.<br>
+                        Menciptakan setiap momen dengan penuh semangat dan profesional.</p>
+                </div>
+                <div>
+                     <h4 class="font-semibold mb-4 text-base lg:text-lg">Contact / Kontak</h4> 
+                    <ul class="space-y-2 text-white">
+                        <li><a href="mailto:salvestudiobox@gmail.com" class="hover:text-white transition-colors text-sm lg:text-base" target="_blank">
+                            Email: salvestudiobox@gmail.com</a>
+
+                        </li>
+                        <li><a href="https://wa.me/6282229970129" class="hover:text-white transition-colors text-sm lg:text-base" target="_blank">
+                            Phone / Telepon: +62 822-2997-0129</a>
+
+                        </li>
+                        <li><a href="https://www.instagram.com/salvestudiobox" class="hover:text-white transition-colors text-sm lg:text-base" target="_blank">
+                            Instagram: @salvestudiobox</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 lg:mt-12 pt-8 text-center text-white">
+                <p class="text-sm lg:text-base">© 2026 Salve Studio. All rights reserved. / Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<script>
+const burger = document.getElementById("burger");
+const menu = document.getElementById("mobileMenu");
+
+burger.addEventListener("click", () => {
+
+    burger.classList.toggle("active");
+
+    menu.classList.toggle("opacity-0");
+    menu.classList.toggle("pointer-events-none");
+
+});
+
+function filterSelection(category, btn) {
+    const items = document.querySelectorAll('.portfolio-item');
+    const buttons = document.querySelectorAll('.filter-btn');
+
+    // 1. Logika Tukar Gaya Tombol
+    buttons.forEach(button => {
+        // Balikkan semua tombol ke gaya NON-ACTIVE (Hitam)
+        button.classList.remove('bg-white', 'text-black', 'border', 'border-white', 'rounded-full', 'px-4', 'py-1');
+        button.classList.add('bg-black', 'text-white', 'border', 'border-gray-700', 'rounded-full', 'px-4', 'py-1');
+    });
+
+    // Ubah tombol yang diklik menjadi ACTIVE (Putih)
+    btn.classList.remove('bg-black', 'text-white', 'border', 'border-gray-700', 'rounded-full', 'px-4', 'py-1');
+    btn.classList.add('bg-white', 'text-black', 'border', 'border-white', 'rounded-full', 'px-4', 'py-1');
+
+    // 2. Logika Filter Gambar (Muncul/Sembunyi)
+    items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.classList.remove('hidden');
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+}
+</script>
+
+
+</html>
