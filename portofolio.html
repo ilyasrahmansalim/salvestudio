@@ -18,6 +18,24 @@
 <style>
 html {
   scroll-behavior: smooth;
+  background-color: #000;
+}
+
+@keyframes starSpin {
+  0% {
+    transform:  rotate(0deg) scale(0.5);
+    opacity: 1;
+  }
+
+  60% {
+    transform:  rotate(180deg) scale(0.3);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform:  rotate(0deg) scale(0.5);
+    opacity: 1;
+  }
 }
 
 #burger.active span:nth-child(1) {
@@ -41,7 +59,7 @@ html {
         <div class="flex items-center justify-between">
 
             <!-- Logo -->
-            <a href="#intro" class="text-xl font-bold">SALVE STUDIO ✦</a>
+            <a href="#intro" class="text-xl font-bold">SALVE STUDIO <span class="relative inline-block mb-0 mx-auto text-xl text-white animate-[starSpin_2s_ease-in-out_infinite]">✦</span></a>
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex gap-6">
@@ -81,9 +99,9 @@ html {
 </div>
 
     <!--Awal-->
-    <section id="intro" class="bg-black py-20 px-4">
+    <section id="intro" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-2xl md:text-8xl font-bold mb-4 mt-12 text-white ">
+            <h1 class="text-5xl md:text-8xl font-bold mb-4 mt-12 text-white ">
                 Portofolio</h1>
 
             <p class="text-xl md:text-2xl text-gray-400 relative after:absolute after:left-0 after:-bottom-5 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-gray-500 after:to-transparent">
@@ -139,23 +157,23 @@ html {
 </div>
 
 <!--Moodboards-->
-    <section id="intro" class="bg-black py-20 px-4">
+    <section id="intro" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-2xl md:text-8xl font-semibold mb-4 mt-12 text-white ">
+            <h1 class="text-5xl md:text-8xl font-semibold mb-4 mt-12 text-white ">
                 Moodboards</h1>
 
-            <p class="text-xl md:text-2xl text-gray-400 relative after:absolute after:left-0 after:-bottom-5 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-gray-500 after:to-transparent">
+            <p class="text-md md:text-2xl text-gray-400 relative after:absolute after:left-0 after:-bottom-5 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-gray-500 after:to-transparent">
                 Visual inspiration for each package style / Inspirasi visual untuk setiap gaya paket</p>        
     </section>
 <!--Moodboards GOLDEN-->
-    <section id="intro" class="bg-black py-20 px-4">
+    <section id="intro" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-8xl md:text-6xl font-semibold mb-4 mt-12 text-white ">
+            <h1 class="text-xl md:text-5xl font-semibold mb-4 text-white ">
                 GOLDEN-MOODBOARD</h1>
 
-            <p class="text-xl md:text-2xl text-gray-400">
+            <p class="text-md md:text-2xl text-gray-400">
                 Premium yearbook and group photography aesthetic</p> 
-            <p class="text-xl md:text-2xl text-gray-500">
+            <p class="text-md md:text-2xl text-gray-500">
                 Estetika fotografi yearbook dan grup premium</p>        
     </section>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
@@ -176,13 +194,13 @@ html {
     </div>
 
 <!--Moodboards SIGNATURE-->
-    <section id="intro" class="bg-black py-20 px-4">
+    <section id="intro" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-8xl md:text-6xl font-semibold mb-4 mt-12 text-white ">
+            <h1 class="text-xl md:text-5xl font-semibold mb-4 mt-12 text-white ">
                 SIGNATURE-MOODBOARD</h1>
-            <p class="text-xl md:text-2xl text-gray-400">
+            <p class="text-md md:text-2xl text-gray-400">
                 Classic and timeless group portrait style</p> 
-            <p class="text-xl md:text-2xl text-gray-500">
+            <p class="text-md md:text-2xl text-gray-500">
                 Gaya potret grup klasik dan abadi</p>        
     </section>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
@@ -203,13 +221,13 @@ html {
     </div>
 
 <!--Moodboards EXCELLENT-->
-    <section id="intro" class="bg-black py-20 px-4">
+    <section id="intro" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-8xl md:text-6xl font-semibold mb-4 mt-12 text-white ">
+            <h1 class="text-xl md:text-5xl font-semibold mb-4 mt-12 text-white ">
                 EXCELLENT-MOODBOARD</h1>
-            <p class="text-xl md:text-2xl text-gray-400">
+            <p class="text-md md:text-2xl text-gray-400">
                Contemporary and lifestyle-oriented photography</p> 
-            <p class="text-xl md:text-2xl text-gray-500">
+            <p class="text-md md:text-2xl text-gray-500">
                Fotografi kontemporer dan berorientasi gaya hidup</p>        
     </section>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4 max-w-6xl mx-auto">
@@ -232,19 +250,18 @@ html {
     <!--Contact Info-->
     <section class="py-20 px-4 mt-40 bg-black">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-white">
+            <h2 class="text-xl md:text-4xl font-bold text-center mb-4 text-white">
                 Like What You See? / Suka Dengan Apa Yang Anda Lihat?</h2>
-            <p class="text-md md:text-md mb-8 text-center text-gray-300">
+            <p class="text-md md:text-md mb-8 text-center text-gray-200">
                Book your session now and let's create amazing memories together!<br>Pesan sesi Anda sekarang dan mari ciptakan kenangan luar biasa bersama!</p>
-            <div class="flex items-center justify-center gap-4 mb-8">
-            <a href="https://wa.me/82229970129" class="relative z-10 inline-block px-12 py-3 border border-white text-white overflow-hidden before:absolute before:inset-0 before:bg-white before:z-[-1] before:translate-x-[-100%] before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-black">
-                Book Now / Pesan Sekarang
-            </a>
+                <div class="p-8 rounded-2xl shadow-lg">
+                        <a href="price-list.html" class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg mt-8 text-center relative inline-block hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            Book Now / Pesan Sekarang</a>
             </div>
         </div>
     </section>
     
-    <footer class="bg-black text-white py-12 px-4 lg:px-8 xl:px-12">
+    <footer class="text-white py-12 px-4 lg:px-8 xl:px-12">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-24">
                 <div class="sm:col-span-2 lg:col-span-1">

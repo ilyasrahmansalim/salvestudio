@@ -18,6 +18,7 @@
 <style>
 html {
   scroll-behavior: smooth;
+  background-color: #000;
 }
     @keyframes luxuryShine {
   from {
@@ -25,6 +26,23 @@ html {
   }
   to {
     transform: rotate(30deg) translateX(120%) translateY(-50%);
+  }
+}
+
+@keyframes starSpin {
+  0% {
+    transform:  rotate(0deg) scale(0.5);
+    opacity: 1;
+  }
+
+  60% {
+    transform:  rotate(180deg) scale(0.3);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform:  rotate(0deg) scale(0.5);
+    opacity: 1;
   }
 }
 
@@ -48,7 +66,7 @@ html {
         <div class="flex items-center justify-between">
 
             <!-- Logo -->
-            <a href="#intro" class="text-xl font-bold">SALVE STUDIO ✦</a>
+            <a href="#intro" class="text-xl font-bold">SALVE STUDIO <span class="relative inline-block mb-0 mx-auto text-xl text-white animate-[starSpin_2s_ease-in-out_infinite]">✦</span></a>
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex gap-6">
@@ -75,7 +93,7 @@ html {
     </div>
 </header>
             <!-- Mobile Menu -->
-            <div id="mobileMenu"class="fixed inset-0 bg-black text-white flex flex-col items-center justify-center gap-10 opacity-0 pointer-events-none transition-all duration-300 z-40">
+            <div id="mobileMenu"class="fixed inset-0 text-white flex flex-col items-center justify-center gap-10 opacity-0 pointer-events-none transition-all duration-300 z-40">
             <a href="index.html" class="text-3xl font-semibold">
                 Home</a>
             <a href="price-list.html" class="text-3xl font-semibold">
@@ -88,9 +106,9 @@ html {
 </div>
 
     <!--Awal-->
-    <section id="intro" class="bg-black py-20 px-4">
+    <section id="intro" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl md:text-8xl font-bold mb-4 mt-12 text-white ">
+            <h1 class="text-5xl md:text-8xl font-bold mb-4 mt-12 text-white ">
                 Contact Us</h1>
 
             <p class="text-xl md:text-2xl text-gray-400 relative after:absolute after:left-0 after:-bottom-5 after:h-[1px] after:w-full after:bg-gradient-to-r after:from-transparent after:via-gray-500 after:to-transparent">
@@ -107,10 +125,9 @@ html {
                 Mari Ciptakan Momen Hebat Bersama!</p>
             <p class="text-md md:text-md mb-8 text-center text-gray-500">
                 Contact us via WhatsApp for instant response and booking<br>Hubungi kami via WhatsApp untuk respons cepat dan pemesanan</p>
-            <div class="flex items-center justify-center gap-4 mb-8">
-            <a href="https://wa.me/82229970129" class="relative z-10 inline-block px-12 py-3 border border-white text-white overflow-hidden before:absolute before:inset-0 before:bg-white before:z-[-1] before:translate-x-[-100%] before:transition-transform before:duration-300 hover:before:translate-x-0 hover:text-black">
-                📱 WhatsApp Us / Hubungi Via WhatsApp
-            </a>
+            <div class="p-8 rounded-2xl shadow-lg">
+                <a href="https://wa.me/6282229970129" class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg text-center relative inline-block hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                📱 WhatsApp Us / Hubungi Via WhatsApp</a>
             </div>
         </div>
     </section>
@@ -120,78 +137,47 @@ html {
              
             <a href="https://wa.me/82229970129" class="block" target="_blank">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                <div class="rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
                     <span class="text-8xl text-white mb-4 mt-12 text-center">📱</span>
                      <h3 class="text-3xl font-bold mb-4 text-white text-center">
                         WhatsApp</h3> 
                     </p>
                     <div class="mb-4">
-                        <div class="items-baseline text-center"><span class="text-5xl md:text-2xl font-bold text-white">
-                            +62 822-2997-0129</span></div>   
-                    </div>
-                    <div class="mb-4">
-                        
-                    </div>
-                    <div class="flex-grow">
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <span class="text-gray-300 text-center">
-                                    For quick Response / Untuk respon Cepat</span>
-                            </li>
-                        </ul>
+                        <div class="items-baseline text-center"><span class="text-md font-bold text-white">
+                            +62 822-2997-0129</span><br>
+                            <span class="text-gray-300 text-center">
+                            For quick Response / Untuk respon Cepat</span>
+                        </div>   
                     </div>
                 </div></a>
 
                 <a class="block" href="mailto:salvestudiobox@gmail.com" target="_blank">
-                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                <div class="rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
                     <span class="text-8xl text-white mb-4 mt-12 text-center">✉️</span>
                      <h3 class="text-3xl font-bold mb-4 text-white text-center">
                         Email</h3> 
                     </p>
                     <div class="mb-4">
-                        <div class="items-baseline text-center"><span class="text-5xl md:text-2xl font-bold text-white">
-                            salvestudiobox@gmail.com</span></div>   
-                    </div>
-                    
-                    <div class="mb-4">
-
-                        
-                    </div>
-                    <div class="flex-grow">
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <span class="text-gray-300 text-center">
-                                    For detailing inquiries / Untuk pertanyaan detail</span>
-
-                            </li>
-                        </ul>
+                        <div class="items-baseline text-center"><span class="text-md font-bold text-white">
+                            salvestudiobox@gmail.com</span><br>
+                            <span class="text-gray-300 text-center">
+                            For detailing inquiries / Untuk pertanyaan detail</span>
+                        </div>   
                     </div>
                 </div></a>
 
                 <a href="https://www.instagram.com/salvestudiobox" class="block" target="_blank">
-                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                <div class="rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
                     <span class="text-8xl text-white mb-4 mt-12 text-center ">📷</span>
                     
                      <h3 class="text-3xl font-bold mb-4 text-white text-center">
                         Instagram</h3> 
                     </p>
                     <div class="mb-4">
-                        <div class="items-baseline text-center"><span class="text-5xl md:text-2xl font-bold text-white">
-                            @salvestudiobox</span></div>   
-                    </div>
-                    
-                    <div class="mb-4">
-
-                        
-                    </div>
-                    <div class="flex-grow">
-                        <ul class="space-y-4">
-                            <li class="flex items-start gap-3">
-                                <span class="text-gray-300 text-center">
-                                    See our latest work / Lihat karya terbaru kami</span>
-
-                            </li>
-                        </ul>
+                        <div class="items-baseline text-center"><span class="text-md font-bold text-white">
+                        @salvestudiobox</span><br>
+                        <span class="text-gray-300 text-center">
+                        See our latest work / Lihat karya terbaru kami</span></div>   
                     </div>
                 </div></a>
             </div>
@@ -203,7 +189,7 @@ html {
              <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Business Hours / Jam Operasional</h2> 
             <div class="space-y-4">
 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">                        
                         <div class="flex-1 text-center">
                              <h3 class="text-xl font-bold mb-2 text-white">
@@ -214,7 +200,7 @@ html {
                     </div>
                 </div>
                 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">                      
                         <div class="flex-1 text-center">
                              <h3 class="text-xl font-bold mb-2 text-white">
@@ -234,7 +220,7 @@ html {
              <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2> 
             <div class="space-y-4">
 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -251,7 +237,7 @@ html {
                     </div>
                 </div>
                 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -268,7 +254,7 @@ html {
                     </div>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -285,7 +271,7 @@ html {
                     </div>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -309,23 +295,23 @@ html {
     <section class="py-20 px-4 bg-black">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12">
-                 <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
+                 <h2 class="text-xl md:text-5xl font-bold mb-6 text-white">
                     Still have questions? Don't hesitate to reach out!</h2> 
-                <p class="text-xl text-white max-w-2xl mx-auto">
+                <p class="text-md text-white max-w-2xl mx-auto">
                     Masih ada pertanyaan? Jangan ragu untuk menghubungi kami!</p>
             </div>
             <div class="max-w-2xl mx-auto">
-                <div class="p-8 bg-black rounded-2xl shadow-lg">
+                <div class="p-8 rounded-2xl shadow-lg">
                     <form class="space-y-4">
                         <a href="#contact" class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg text-center relative inline-block hover:scale-105 hover:shadow-2xl transition-all duration-300">
-                            Contact Us / hubungi Kami</a>
+                            Contact Us / Hubungi Kami</a>
 
                     </form>
                 </div>  
         </div>
     </section>
     
-    <footer class="bg-black text-white py-12 px-4 lg:px-8 xl:px-12">
+    <footer class="text-white py-12 px-4 lg:px-8 xl:px-12">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-24">
                 <div class="sm:col-span-2 lg:col-span-1">

@@ -18,6 +18,7 @@
 <style>
 html {
   scroll-behavior: smooth;
+  background-color: #000;
 }
 @keyframes luxuryShine {
   from {
@@ -30,17 +31,17 @@ html {
 
 @keyframes starSpin {
   0% {
-    transform: translateX(0) rotate(0deg) scale(1);
+    transform:  rotate(0deg) scale(0.5);
     opacity: 1;
   }
 
   60% {
-    transform: translateX(-20px) rotate(180deg) scale(0.5);
+    transform:  rotate(180deg) scale(0.3);
     opacity: 0.2;
   }
 
   100% {
-    transform: translateX(0px) rotate(360deg) scale(1);
+    transform:  rotate(0deg) scale(0.5);
     opacity: 1;
   }
 }
@@ -67,7 +68,7 @@ html {
         <div class="flex items-center justify-between">
 
             <!-- Logo -->
-            <a href="#intro" class="text-xl font-bold">SALVE STUDIO ✦</a>
+            <a href="#intro" class="text-xl font-bold">SALVE STUDIO <span class="relative inline-block mb-0 mx-auto text-xl text-white animate-[starSpin_2s_ease-in-out_infinite]">✦</span></a>
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex gap-6">
@@ -107,11 +108,14 @@ html {
 </div>
 
     <!--Intro Salve Studio-->
-    <section id="intro" class="bg-black py-20 px-4">
+    <section id="intro" class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <div class="text-4xl md:text-8xl font-bold mb-6 mt-40 text-white animate-[starSpin_2s_ease-in-out_infinite]">
+            <div class="translate-x-[10%] translate-y-[40%] scale-70">
+            <div class="relative inline-block mb-0 mx-auto text-8xl font-bold text-white animate-[starSpin_2s_ease-in-out_infinite]">
+                ✦</div></div>
+            <div class="text-8xl font-bold mb-6 text-white">
                 ✦</div>
-            <h1 class="text-4xl md:text-8xl font-bold mb-4 text-white ">
+            <h1 class="text-4xl font-bold mb-4 text-white ">
                 SALVE STUDIO</h1>
 
             <p class="text-xl md:text-2xl mb-4 text-gray-400">
@@ -156,7 +160,7 @@ html {
                 Choose the perfect package for your needs / Pilih paket yang sempurna untuk kebutuhan Anda</p>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                <div class="rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
                     <span class="text-8xl text-white mb-4 text-center">✦</span>
                      <h3 class="text-3xl md:text-2xl font-bold mb-12 text-white text-center">
                         GOLDEN-PACK</h3> 
@@ -183,7 +187,7 @@ html {
                     </div>
                 </div>
 
-                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                <div class="rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
                     <span class="text-8xl text-white mb-4 text-center">✦</span>
                      <h3 class="text-3xl md:text-2xl font-bold mb-12 text-white text-center">
                         SIGNATURE-PACK</h3> 
@@ -213,7 +217,7 @@ html {
                     </div>
                 </div>
 
-                <div class="bg-black rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
+                <div class="rounded-2xl transition-all duration-300 flex flex-col h-full p-8 relative overflow-hidden after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:w-[250%] after:h-[250%] after:bg-gradient-to-r after:from-transparent after:via-white/20 after:to-transparent after:rotate-[30deg] after:-translate-x-[120%] after:-translate-y-1/2 hover:after:animate-[luxuryShine_2.5s_linear_infinite] hover:scale-105 hover:border hover:border-gray-500">
                     <span class="text-8xl text-white mb-4 text-center ">✦</span>
                     
                      <h3 class="text-3xl md:text-2xl font-bold mb-12 text-white text-center">
@@ -245,8 +249,7 @@ html {
                 </div>
             </div>
             
-            <a href="#"
-   class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg mt-8 text-center relative inline-block  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+            <a href="price-list.html" class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg mt-8 text-center relative inline-block  hover:scale-105 hover:shadow-2xl transition-all duration-300">
    View All Packages / Lihat Semua Paket
 </a>
 
@@ -258,7 +261,7 @@ html {
              <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Frequently Asked Questions</h2> 
             <div class="space-y-4">
 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -275,7 +278,7 @@ html {
                     </div>
                 </div>
                 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -292,7 +295,7 @@ html {
                     </div>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -309,7 +312,7 @@ html {
                     </div>
                 </div>
 
-                <div class="bg-black p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                <div class="p-6 rounded-lg shadow-md  hover:scale-105 hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 bg-primary-700 rounded-full flex items-center justify-center"><span class="text-white font-bold text-sm">?</span>
 
@@ -339,17 +342,14 @@ html {
                     Mari Ciptakan Momen Hebat Bersama!</p>
             </div>
             <div class="max-w-2xl mx-auto">
-                <div class="p-8 bg-black rounded-2xl shadow-lg">
-                    <form class="space-y-4">
-                        <a href="#" class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg mt-8 text-center relative inline-block hover:scale-105 hover:shadow-2xl transition-all duration-300">
-                            Contact Us / hubungi Kami</a>
-
-                    </form>
-                </div>  
+                <div class="p-8 rounded-2xl shadow-lg">
+                        <a href="https://wa.me/6282229970129" class="block w-full bg-primary-700 text-white p-4 border border-gray-200 font-semibold text-lg mt-8 text-center relative inline-block hover:scale-105 hover:shadow-2xl transition-all duration-300">
+                            Contact Us / Hubungi Kami</a>
+                </div>
         </div>
     </section>
     
-    <footer class="bg-black text-white py-12 px-4 lg:px-8 xl:px-12">
+    <footer class="text-white py-12 px-4 lg:px-8 xl:px-12">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-24">
                 <div class="sm:col-span-2 lg:col-span-1">
